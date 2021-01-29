@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <body>
+    
     <h1 class="header">My Pinboard</h1>
     <div class="searchContainer">
   <label class="searchLabel">search</label>
@@ -28,5 +28,34 @@
 </div>
     <div class="cardContainer" id="cardContainer"></div>
     <script type="text/javascript" src="script.js"></script>
-  </body>
+  <div id="newCardModal" class="modal">
+  <div class="modal-content">
+    <!-- the X-button can be achieved by using the "&times;" entity -->
+
+    <span class="close">&times;</span>
+    <form>
+      <label for="imgSrc">Image source</label>
+      <input
+        type="text"
+        id="imgsrc"
+        name="source"
+        class="newCardInput"
+        placeholder="Paste your image url here"
+      />
+      <label for="tags">Tags</label>
+      <input
+        type="text"
+        id="tags"
+        name="tags"
+        class="newCardInput"
+        placeholder="Separate tags with a semicolon ( ; )"
+      />
+
+      <button type="button" class="submitButton" onclick="saveNewCard()">
+        Submit
+      </button>
+    </form>
+  </div>
+</div>
+</body>
 </html>
