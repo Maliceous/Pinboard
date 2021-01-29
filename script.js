@@ -31,6 +31,16 @@ fetch("data.json")
 
     const tagButtons = data[i].tags.map((tag) => {
       const tagButton = document.createElement("button");
+      tagButton.onclick = () => {
+  const filteredCards = cards.filter((card) => {
+    return (
+      card.tags.find((tag) => {
+        return tag.includes(tagButton.innerHTML);
+      }) !== undefined
+    );
+  });
+  appendData(filteredCards);
+};
       tagButton.innerHTML = tag;
       return tagButton;
     });
@@ -41,5 +51,20 @@ fetch("data.json")
   }
 }
 
-var card = document.createElement("div");
-card.className = "card";
+function filterTags() {
+  var searchTerm = document.getElementById("searchInput").value;
+  document.getElementById("searchResult").innerHTML =
+    "You searched for: " + searchTerm;
+
+  const searchTermLower = searchTerm.toLowerCase();
+
+  const filteredCards = cards.filter((card) => {
+    return (
+      card.tags.find((tag) => {
+        const tagLower = tag.toLowerCase();
+        return tagLower.includes(searchTermLower);
+      }) !== undefined
+    );
+  });
+  appendData(filteredCards);
+}
