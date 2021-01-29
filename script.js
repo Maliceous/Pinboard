@@ -86,3 +86,22 @@ window.onclick = function (event) {
     newCardModal.style.display = "none";
   }
 };
+
+function saveNewCard() {
+  var newImgSrc = document.getElementById("imgsrc").value;
+
+  var newTags = document.getElementById("tags").value.split(";");
+
+  var lastCardId = cards[cards.length - 1].id;
+
+  var newCard = {
+    id: lastCardId + 1,
+    src: newImgSrc,
+    tags: newTags,
+  };
+
+  cards = [...cards, newCard];
+  appendData(cards);
+
+  newCardModal.style.display = "none";
+}
