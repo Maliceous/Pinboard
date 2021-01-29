@@ -1,5 +1,5 @@
 html {
-  font-family: "helvetica neue", helvetica, arial, sans-serif;
+  font-family: 'Share Tech Mono', monospace;
 }
 
 body {
@@ -23,7 +23,7 @@ h1 {
 
 .searchLabel {
   font-size: 1.2rem;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Share Tech Mono', monospace;
   margin: 0 0.2rem;
 }
 
@@ -31,16 +31,16 @@ h1 {
   height: 2rem;
   width: 25rem;
   box-shadow: 0 0 5px #9ad6ff;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Share Tech Mono', monospace;
   margin: 0 0.2rem;
 }
 
 .searchResult {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Share Tech Mono', monospace;
 }
 
 .newCardButton {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Share Tech Mono', monospace;
   font-size: large;
   margin: 0 0.2rem;
 }
@@ -61,7 +61,7 @@ img {
 }
 
 .card {
-  background-color: #65f8f1;
+  background-color: #5473ff;
   margin: 0.5rem;
   max-width: 30rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -74,7 +74,7 @@ img {
 }
 .tagButton {
   text-shadow: 0 0 5px #9ad6ff;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Share Tech Mono', monospace;
   font-size: medium;
   margin: 0.5rem;
 }
