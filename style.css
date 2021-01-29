@@ -5,15 +5,15 @@ html {
 body {
   width: 80rem;
   margin: 0 auto;
-  background-color: #f4b0b0;
+  background-color: #598dff;
 }
 
 h1 {
   font-size: 4rem;
   text-align: center;
-  font-family: "Bungee Shade", cursive;
-  color: #fc47bb;
-  text-shadow: 0 0 5px #fc47bb;
+  font-family: 'Chakra Petch', sans-serif;
+  color: #9ad6ff;
+  text-shadow: 0 0 5px #9ad6ff;
 }
 
 .searchContainer {
@@ -30,7 +30,7 @@ h1 {
 .searchInput {
   height: 2rem;
   width: 25rem;
-  box-shadow: 0 0 5px #fc47bb;
+  box-shadow: 0 0 5px #9ad6ff;
   font-family: "Montserrat", sans-serif;
   margin: 0 0.2rem;
 }
@@ -61,7 +61,7 @@ img {
 }
 
 .card {
-  background-color: #f7c5c5;
+  background-color: #65f8f1;
   margin: 0.5rem;
   max-width: 30rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -73,7 +73,7 @@ img {
   justify-content: center;
 }
 .tagButton {
-  text-shadow: 0 0 5px #fc47bb;
+  text-shadow: 0 0 5px #9ad6ff;
   font-family: "Montserrat", sans-serif;
   font-size: medium;
   margin: 0.5rem;
