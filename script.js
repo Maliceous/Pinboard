@@ -12,7 +12,7 @@ fetch("data.json")
     console.log(err);
   });
 
-  function appendData(data) {
+function appendData(data) {
   var cardContainer = document.getElementById("cardContainer");
   cardContainer.innerHTML = "";
 
@@ -32,15 +32,15 @@ fetch("data.json")
     const tagButtons = data[i].tags.map((tag) => {
       const tagButton = document.createElement("button");
       tagButton.onclick = () => {
-  const filteredCards = cards.filter((card) => {
-    return (
-      card.tags.find((tag) => {
-        return tag.includes(tagButton.innerHTML);
-      }) !== undefined
-    );
-  });
-  appendData(filteredCards);
-};
+        const filteredCards = cards.filter((card) => {
+          return (
+            card.tags.find((tag) => {
+              return tag.includes(tagButton.innerHTML);
+            }) !== undefined
+          );
+        });
+        appendData(filteredCards);
+      };
       tagButton.innerHTML = tag;
       return tagButton;
     });
@@ -76,7 +76,9 @@ newCardButton.onclick = function () {
   newCardModal.style.display = "block";
 };
 
-var closeModal = document.getElementsByClassName("close")[0];
+// var closeModal = document.getElementsByClassName("close")[0];
+var closeModal = document.getElementById("close")
+console.log(closeModal)
 closeModal.onclick = function () {
   newCardModal.style.display = "none";
 };
